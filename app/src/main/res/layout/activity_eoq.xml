@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EOQ">
+
+    <EditText
+        android:id="@+id/et_DemandInUnits"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Demand in Units"
+        />
+    <EditText
+        android:id="@+id/et_OderCost"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/et_DemandInUnits"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Order Cost"
+        />
+    <EditText
+        android:id="@+id/et_HoldingCost"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_OderCost"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Holding Cost"
+        />
+
+    <TextView
+        android:id="@+id/tv_noUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_HoldingCost"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="90dp"
+        android:text="No. of Units: "
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_noOfUnits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_HoldingCost"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@+id/tv_noUnits"
+        android:text="0"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_compute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_noOfUnits"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Compute"
+        />
+
+
+</RelativeLayout>
