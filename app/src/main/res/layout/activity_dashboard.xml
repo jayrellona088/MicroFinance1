@@ -77,7 +77,6 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:backgroundTint="#FF9800"
                     android:padding="10dp" />
 
                 <TextView
@@ -220,7 +219,7 @@
                 <ImageView
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:background="@drawable/profileLogo"
+                    android:background="@drawable/profilelogo"
                     android:padding="10dp" />
 
                 <TextView
