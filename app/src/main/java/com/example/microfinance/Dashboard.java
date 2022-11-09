@@ -9,15 +9,15 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Dashboard extends AppCompatActivity {
-    private LinearLayout tv_Loan;
+    private LinearLayout l_Loan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        tv_Loan = findViewById(R.id.tv_Loan);
+        l_Loan = findViewById(R.id.l_Loan);
 
-        tv_Loan.setOnClickListener(new View.OnClickListener() {
+        l_Loan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this,EOQ.class);

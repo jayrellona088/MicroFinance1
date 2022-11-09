@@ -27,6 +27,7 @@
             android:padding="3dp">
 
             <LinearLayout
+                android:id="@+id/l_Loan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -35,14 +36,14 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:background="@drawable/money1"
+                    android:background="@drawable/loanlogo"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Progress"
+                    android:text="Apply forLoan"
                     android:textStyle="bold" />
 
                 <View
@@ -51,13 +52,6 @@
                     android:layout_margin="10dp"
                     android:background="#E8E8E8" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="3dp"
-                    android:text=" Check your Progress activities"
-                    android:textColor="@android:color/darker_gray" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -69,21 +63,23 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:id="@+id/l_EOQ"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/box"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Revenue"
+                    android:text="EOQ"
                     android:textStyle="bold" />
 
                 <View
@@ -92,13 +88,6 @@
                     android:layout_margin="10dp"
                     android:background="#E8E8E8" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="3dp"
-                    android:text="Check your revenue activities"
-                    android:textColor="@android:color/darker_gray" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -119,22 +108,23 @@
             android:foreground="?android:attr/selectableItemBackground">
 
             <LinearLayout
+                android:id="@+id/l_LoanHistory"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:backgroundTint="#36853A"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/paper"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Languish"
+                    android:text="Loan History"
                     android:textStyle="bold" />
 
                 <View
@@ -143,13 +133,6 @@
                     android:layout_margin="10dp"
                     android:background="#E8E8E8" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="3dp"
-                    android:text="Select your country Languish"
-                    android:textColor="@android:color/darker_gray" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -167,16 +150,16 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="64dp"
-                    android:layout_height="64dp"
-                    android:backgroundTint="#F43374"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/book"
                     android:padding="10dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Ideas"
+                    android:text="Account Book"
                     android:textStyle="bold" />
 
                 <View
@@ -185,13 +168,6 @@
                     android:layout_margin="10dp"
                     android:background="#E8E8E8" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="3dp"
-                    android:text="Check your revenue activities"
-                    android:textColor="@android:color/darker_gray" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
@@ -219,7 +195,7 @@
                 <ImageView
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:background="@drawable/profilelogo"
+                    android:background="@drawable/profileLogo"
                     android:padding="10dp" />
 
                 <TextView
