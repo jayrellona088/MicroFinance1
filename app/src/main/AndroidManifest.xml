@@ -13,6 +13,27 @@
         android:theme="@style/Theme.MicroFInance"
         tools:targetApi="31">
         <activity
+            android:name=".AccountBookEnter"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AccountBook"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ApplyLoan"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".viewLoan"
             android:exported="false">
             <meta-data

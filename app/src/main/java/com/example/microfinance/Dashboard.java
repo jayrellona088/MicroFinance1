@@ -26,7 +26,7 @@ public class Dashboard extends AppCompatActivity {
         l_Loan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dashboard.this,EOQ.class);
+                Intent intent = new Intent(Dashboard.this,viewLoan.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class Dashboard extends AppCompatActivity {
         l_EOQ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(Dashboard.this, EOQ.class);
                 startActivity(intent);
             }
         });
