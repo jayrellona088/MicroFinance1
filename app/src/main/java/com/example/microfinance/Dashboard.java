@@ -31,5 +31,38 @@ public class Dashboard extends AppCompatActivity {
             }
         });
 
+        l_EOQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                startActivity(intent);
+            }
+        });
+
+        l_LoanHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                startActivity(intent);
+            }
+        });
+
+        l_AccountBook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                startActivity(intent);
+            }
+        });
+
+        l_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                startActivity(intent);
+            }
+        });
+
     }
+
 }
