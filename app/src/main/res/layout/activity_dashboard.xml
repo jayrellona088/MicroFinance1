@@ -147,6 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:id="@+id/l_AccountBook"
                 android:orientation="vertical">
 
                 <ImageView
@@ -190,12 +191,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:id="@+id/l_profile"
                 android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="75dp"
                     android:layout_height="75dp"
-                    android:background="@drawable/profileLogo"
+                    android:background="@drawable/profilelogo"
                     android:padding="10dp" />
 
                 <TextView
