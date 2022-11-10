@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_dynamic_neutral_variant95"
-    tools:context=".MainActivity">
+    tools:context=".SignUpActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txt_"
@@ -29,15 +28,14 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="20dp"
-                android:text="Login"
+                android:text="Sign Up"
                 android:textColor="@color/black"
                 android:textSize="25dp"
                 android:textStyle="bold" />
 
 
             <EditText
-                android:id="@+id/et_main_phoneNumber"
-                android:inputType="numberPassword"
+                android:id="@+id/et_signup_phoneNumber"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
                 android:layout_below="@+id/tv_main_login"
@@ -48,30 +46,32 @@
                 android:textSize="15dp" />
 
             <EditText
-                android:id="@+id/et_main_Password"
+                android:id="@+id/et_signup_Password"
                 android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:layout_below="@+id/et_main_phoneNumber"
+                android:layout_below="@+id/et_signup_phoneNumber"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="18dp"
                 android:hint="Password"
                 android:textSize="15dp" />
 
-            <Button
-                android:id="@+id/btn_main_SignIn"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/et_main_Password"
+            <EditText
+                android:id="@+id/et_signup_RetypePassword"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/et_signup_Password"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="20dp"
-                android:text="Sign IN" />
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="18dp"
+                android:hint="Retype Password"
+                android:textSize="15dp" />
 
             <Button
                 android:id="@+id/btn_signup_SignUp"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/btn_main_SignIn"
+                android:layout_below="@+id/et_signup_RetypePassword"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="30dp"
