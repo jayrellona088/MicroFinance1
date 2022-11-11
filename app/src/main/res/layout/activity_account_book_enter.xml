@@ -1,84 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="250dp"
     android:padding="20dp"
+    android:orientation="vertical"
     tools:context=".AccountBookEnter">
 
-    <View
-        android:id="@+id/v_view1"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#E8E8E8" />
-
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/tv_Amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/v_view1"
-        android:layout_alignParentStart="true"
-        android:layout_marginEnd="130dp"
-        android:text="Amount: "
-        android:textSize="20dp" />
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/v_view1"
-        android:layout_toEndOf="@+id/tv_Amount">
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:elevation="5dp"
-            android:text="0"
-            android:textSize="20dp" />
-    </androidx.cardview.widget.CardView>
-
-    <View
-        android:id="@+id/v_view2"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:layout_below="@+id/tv_Amount"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="#E8E8E8" />
-
-    <RadioGroup
-        android:id="@+id/rg_group1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/v_view2">
-
+        android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:text="Paid" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:text="Amount: "
+                android:textSize="30dp" />
+            <EditText
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Income" />
+                android:layout_toEndOf="@+id/tv_Amount"
+                android:layout_alignParentTop="true"
+                android:background="@null"
+                android:hint="0" />
         </LinearLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    </RadioGroup>
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/rg_group1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Complete" />
-</RelativeLayout>
+</LinearLayout>

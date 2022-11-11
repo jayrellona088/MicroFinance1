@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Db = new DatabaseHelper(this);
+        Db = new DatabaseHelper(MainActivity.this);
         m_phoneNumber = findViewById(R.id.et_main_phoneNumber);
         m_password = findViewById(R.id.et_main_Password);
         m_btnLogin = findViewById(R.id.btn_main_SignIn);
@@ -44,9 +45,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        m_btnSignUp.setOnClickListener(view -> {
-            Intent intent = new Intent(this, SignUpActivity.class);
-            startActivity(intent);
+        m_btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }

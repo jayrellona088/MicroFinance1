@@ -50,7 +50,7 @@ public class Dashboard extends AppCompatActivity {
         l_AccountBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
+                Intent intent = new Intent(Dashboard.this,AccountBook.class);
                 startActivity(intent);
             }
         });

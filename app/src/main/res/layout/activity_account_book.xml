@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="250dp"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".AccountBook">
@@ -31,15 +31,6 @@
             android:text="This month"
             android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
-            android:text="$"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -73,7 +64,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tv_$income"
+                android:id="@+id/tv_income1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
@@ -88,7 +79,7 @@
                 android:layout_marginStart="2dp"
                 android:text="0"
                 android:textSize="15dp"
-                app:layout_constraintStart_toEndOf="@+id/tv_$income"
+                app:layout_constraintStart_toEndOf="@+id/tv_income1"
                 app:layout_constraintTop_toTopOf="parent" />
 
 
@@ -127,6 +118,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btn_actBookEnter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
